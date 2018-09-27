@@ -66,14 +66,17 @@ automatically in just a few seconds.
       <thead class="thead-dark">
         <tr>
           <th scope="col">Name</th>
+          <th scope="col">Gender</th>
         </tr>
       </thead>
       <% for(var i=0; i < apiData.length; i++) { %>
       <tr>
         <td>
-          <%= apiData[i] %>
+          <%= apiData[i].userName %>
         </td>
-
+        <td>
+          <%= apiData[i].gender %>
+        </td>
       </tr>
       <% } %>
     </table>
